@@ -1,10 +1,17 @@
-import json from '../datos/proyectos.json' assert {type:"json"}
-const listaProyectos=json.listaProyectos; 
+//import json from '../datos/proyectos.json' assert {type:"json"}
 const listaProyectosDom = document.querySelector(".listaProyectos"); 
 listaProyectosDom.innerHTML=""; 
+let  json
 
 let auxiElemento; 
-function CargarProyectos() {
+
+async function CargarProyectos() {
+    const data=await fetch('./assets/js/datos/proyectos.json')
+    if(data){        
+        json = await data.json(); 
+    }
+    const listaProyectos=json.listaProyectos; 
+    
     listaProyectos.forEach(proyecto=>{
       
       auxiElemento=document.createElement('div'); 

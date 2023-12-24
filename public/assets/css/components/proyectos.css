@@ -17,9 +17,10 @@
     left: 10px;
     top: 10px;
     z-index: 2;    
-    font-size: 1.5em;
+    font-size: 2.5em;
     transition: transform 0.5s;
     filter: drop-shadow(1px 1px 1px black);
+    
 }
 .openGit:hover{
     transform: scale(1.2);
@@ -35,6 +36,8 @@
     padding: 8px;    
     width: 39px;
     height: 39px;
+    display: grid;
+    place-content: center;
     filter:drop-shadow( 1px 1px 2px blue) ;
     transition: transform 0.5s, background 0.4s ;
     background: #ffffff;

@@ -1,0 +1,12 @@
+{
+    "ListaHabidades": [
+        {"name":"html", "url":"./assets/img/tecnologias/html-5.png","porcentaje":90,"color":"#74A103"}, 
+        {"name":"css", "url":"./assets/img/tecnologias/css-3.png","porcentaje":80,"color":"#74A103"}, 
+        {"name":"js", "url":"./assets/img/tecnologias/js.png","porcentaje":75,"color":"#27C209"},
+        {"name":"node js", "url":"./assets/img/tecnologias/nodo-js.png","porcentaje":65,"color":"#27C209"}, 
+        {"name":"python", "url":"./assets/img/tecnologias/piton.png","porcentaje":50,"color":"#FF5733"}, 
+        {"name":"java", "url":"./assets/img/tecnologias/java.png","porcentaje":70,"color":"#FF5733"}, 
+        {"name":"sql", "url":"./assets/img/tecnologias/sql.png","porcentaje":50,"color":"#D0A802"}, 
+        {"name":"git", "url":"./assets/img/tecnologias/git.png","porcentaje":60,"color":"#D0A802"} 
+    ]
+}

@@ -1,5 +1,4 @@
 const cardAbout = document.querySelector(".cardAbout");
-
 const callback =(entreis, observer)=>{
     entreis.forEach(entry=> {
         console.log(entry.intersectionRect.y )
@@ -16,7 +15,7 @@ const callback =(entreis, observer)=>{
 const opciones={
     root:null , 
     rootMargin: '0px', 
-    threshold:0 
+    threshold:0.1 
 }
 
 const observer=new IntersectionObserver(callback, opciones);

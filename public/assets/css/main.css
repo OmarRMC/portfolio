@@ -6,8 +6,8 @@
 @import url('components/habilidades.css');
 
 :root{
-    --AlturaNav: 60px;
-    --colorNav:rgb(30, 145, 139); 
+    --AlturaNav: 90px;
+    --colorNav:rgb(30, 132, 145); 
 }
 *{
     margin: 0;
@@ -27,6 +27,7 @@ body{
    transform: translateX(-50%);
 }
 #About>h3,#About ~ section> h3 {
+   height: 30px;
    border-bottom: 2px solid blue ;
    margin: 20px 0px 15px ;
 }

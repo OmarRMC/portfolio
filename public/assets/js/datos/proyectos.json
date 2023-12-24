@@ -1,9 +1,17 @@
 {
    "listaProyectos":[
-    {"titulo":"argoritmo","image":"./assets/img/proyectos/paisaje.jpg","Descripcion":"Grud", 
+    {"titulo":"Metodo Burbuja","image":"./assets/img/proyectos/Burbuja.jpg","Descripcion":"Ordenar un vector de forma animada aplicando  el metodo de burbuja", 
     "stack":[
        {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
-       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  
+       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  , 
+       {"url":"./assets/img/tecnologias/js.png", "name":"js"}  
+    ]}, 
+    {"titulo":"Grud","image":"./assets/img/proyectos/Paisaje.jpg","Descripcion":"Realizando un grud", 
+    "stack":[
+       {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
+       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  , 
+       {"url":"./assets/img/tecnologias/js.png", "name":"js"}  ,
+       {"url":"./assets/img/tecnologias/nodo-js.png", "name":"node"}  
     ]}
    ]
 }
