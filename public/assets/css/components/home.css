@@ -24,7 +24,7 @@
     width: calc(100% - 3px);
     height: calc(100% - 3px); 
     border-radius: 40%;
-    border: 3px solid  rgb(31, 64, 252);    
+    border: 3px solid  rgb(28, 221, 255);    
     animation: animaccionCircularPotho 5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
 @keyframes animaccionCircularPotho {
@@ -44,12 +44,13 @@
     font-weight: bold;
 }
 .info >h2>span{
-    color: rgb(55, 0, 255);
+    color: rgb(24, 4, 97);
+    display: block;
 }
 
 .info > h2 {
   font-size: 2em ;
-  color: rgb(236, 150, 21);
+  color: rgb(255, 153, 0);
 }
 
 .info > p {
@@ -57,29 +58,40 @@
     margin: 15px 5px ;
 }
 .developer{
-    color: rgb(153, 255, 127);
+    color: rgb(13, 138, 76);
+    background: white ;
+    border-radius: 10px;
+    padding: 5px 0px;
+    text-align: center;
 }
 
 .info>.socialNetworks{
-    font-size: 2em;
     text-align: center;
     color: white ;
 }
 .icon{
     cursor: pointer;    
+    text-decoration: none ;
+    font-size: 2em;
+}
+.icon>i{
+    transition:transform 0.4s cubic-bezier(0, 1.17, 0.06, 1.28); 
+}
+.icon>i:hover{
+    transform: scale(1.4);
 }
 .linkedin{
-    color: blue;
+    color: rgb(25, 25, 245);
 }
 .facebook{
-    color: blue;
-
+    color: rgb(0, 0, 124);
+    
 }
 .whatsapp{
-  color: green;
+  color: rgb(7, 211, 7);
 }
 .github{
-    color: black;
+    color: rgb(22, 20, 20);
 }
 
 #AnimacionEndHome> svg {

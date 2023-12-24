@@ -15,7 +15,7 @@ const callback =(entreis, observer)=>{
 const opciones={
     root:null , 
     rootMargin: '0px', 
-    threshold:0.1 
+    threshold:0 
 }
 
 const observer=new IntersectionObserver(callback, opciones);

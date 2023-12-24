@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px 50px ; 
+    gap: 10px 50px ; 
     justify-content: center;
     width: 80%;
     left: 50%;
@@ -10,13 +10,12 @@
 }
 
 .cardHabilidad{    
-    width: 200px;
+    width: 150px;
     height: 90px;
     display: flex; 
     align-items: center;
     gap:10px ;    
-    border-bottom: 2px solid rgb(218, 218, 218) ;    
-    
+    border-bottom: 2px solid rgb(218, 218, 218) ;        
 }
 
 .cardHabilidad  img {
@@ -35,4 +34,10 @@
     height: 100%;
     background: blue;
     transition: width 1s ;
+}
+
+@media screen and (max-width:650px) {
+    .cardHabilidad{    
+        width: 100px;        
+    }
 }

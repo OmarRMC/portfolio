@@ -11,6 +11,7 @@
    border-radius: 50%;
    transition:bottom 1s ;
    cursor: pointer;
+   z-index: 10;
 }
 .flechaUp{
     color: #ffffff;
