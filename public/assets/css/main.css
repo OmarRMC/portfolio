@@ -1,0 +1,20 @@
+@import url('components/proyectos.css');
+@import url('components/flechaArrriba.css');
+@import url('components/home.css');
+@import url('components/nav.css');
+
+:root{
+    --AlturaNav: 60px;
+    --colorNav:rgb(30, 145, 139); 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+

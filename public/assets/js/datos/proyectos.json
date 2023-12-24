@@ -1,0 +1,9 @@
+{
+   "listaProyectos":[
+    {"titulo":"argoritmo","image":"./assets/img/proyectos/paisaje.jpg","Descripcion":"Grud", 
+    "stack":[
+       {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
+       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  
+    ]}
+   ]
+}
