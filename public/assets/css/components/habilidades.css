@@ -1,0 +1,34 @@
+.ListaHabidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 50px ; 
+    justify-content: center;
+    
+}
+
+.cardHabilidad{    
+    width: 200px;
+    height: 90px;
+    display: flex; 
+    align-items: center;
+    gap:10px ;    
+    border-bottom: 2px solid rgb(218, 218, 218) ;    
+    
+}
+
+.cardHabilidad  img {
+    width: 25%;   
+}
+
+.line{
+    width: 60%;
+    background: rgb(196, 196, 196) ;
+    height: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.porcentage{
+    width: 50%;
+    height: 100%;
+    background: blue;
+}

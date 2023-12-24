@@ -1,0 +1,55 @@
+.cardAbout{
+  position: relative;
+  background: rgb(228, 163, 43);
+  border-bottom: 5px solid rgb(255, 123, 0)  ;
+  border-radius: 5px;
+  max-width: 350px;
+  min-width: 300px;
+  left:50%;
+  transform: translateX(-50%);
+  padding-top: 30px;
+}
+
+
+.showStartAbout{
+   animation: animacionEntradaCard 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)  forwards; 
+}
+
+@keyframes animacionEntradaCard {
+    0%{
+        left: -20%;
+    }
+    60%{
+        left: 60%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+.imgAbout{
+    top: -50px;
+    position: absolute;
+    left: calc( 50% - 40px);
+    transform: translateX(calc( 40px - 50% ));
+    width: 80px;
+    height: 80px;        
+}
+.imgAbout> img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white ; 
+    /*object-position: 0 0 ;*/
+}
+
+.informacionAbout{    
+    position: relative;   
+    color:black
+}
+
+.informacionAbout> p{
+    margin: 10px 8px;
+}
+
