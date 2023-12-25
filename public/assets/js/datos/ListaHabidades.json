@@ -7,6 +7,7 @@
         {"name":"python", "url":"./assets/img/tecnologias/piton.png","porcentaje":50,"color":"#FF5733"}, 
         {"name":"java", "url":"./assets/img/tecnologias/java.png","porcentaje":70,"color":"#FF5733"}, 
         {"name":"sql", "url":"./assets/img/tecnologias/sql.png","porcentaje":50,"color":"#D0A802"}, 
-        {"name":"git", "url":"./assets/img/tecnologias/git.png","porcentaje":60,"color":"#D0A802"} 
+        {"name":"git", "url":"./assets/img/tecnologias/git.png","porcentaje":60,"color":"#D0A802"} , 
+        {"name":"React", "url":"./assets/img/tecnologias/ReactJS.png","porcentaje":50,"color":"#27C209"} 
     ]
 }
