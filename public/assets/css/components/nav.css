@@ -86,11 +86,11 @@
         padding: 0px 30px;
         visibility: hidden;
       }
-      .navar > .showItemsNav, .navar.showItemsNav {
+      .navar > .showItemsNav, .navar.showItemsNav {      
          max-height: 200px;
          background: rgb(10, 53, 148);  
-         visibility: visible;   
-         z-index: 20;
+         visibility: visible; 
+         z-index: 20;  
         }
         .navar > .showItemsNav{
             padding: 5px 30px 20px;    

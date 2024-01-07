@@ -18,9 +18,11 @@ async function CargarProyectos() {
       auxiElemento.classList.add("contenedorCard"); 
       auxiElemento.innerHTML=`
       <div class="cardProyecto">
+        <a href="${proyecto.url_web??'#'}" target="_blank">
           <span class="openProyect">
-              <i class="fa-solid fa-up-right-from-square"></i>                    
+              <i class="fa-solid fa-up-right-from-square" ></i>                    
           </span>
+        </a>
           <span class="openGit">
               <i class="fa-brands fa-github" aria-hidden="true"></i>
           </span>

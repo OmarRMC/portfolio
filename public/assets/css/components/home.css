@@ -6,6 +6,7 @@
     align-items: center;
     gap: 0px 50px;
     min-height: calc( 90vh - var(--AlturaNav));
+    overflow: hidden;
 }
 
 .photo{

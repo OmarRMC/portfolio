@@ -14,7 +14,7 @@ const callback =(entreis, observer)=>{
 
 const opciones={
     root:null , 
-    rootMargin: '0px', 
+    rootMargin: '100px 0px', 
     threshold:0 
 }
 

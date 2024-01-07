@@ -6,12 +6,13 @@
        {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  , 
        {"url":"./assets/img/tecnologias/js.png", "name":"js"}  
     ]}, 
-    {"titulo":"Grud","image":"./assets/img/proyectos/Paisaje.jpg","Descripcion":"Realizando un grud", 
+    {"titulo":"Grud con PHP","image":"./assets/img/proyectos/SistemaDeContactos.jpg","Descripcion":"Sistema de contactos con usuarios y base de datos <br> Adm:omar@gmail.com , pass:omar <br> user:juan@gmail.com , pass:juan", 
+    "url_web":"https://culicid-paragraph.000webhostapp.com/proyecto_php/contactos",
     "stack":[
        {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
-       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  , 
-       {"url":"./assets/img/tecnologias/js.png", "name":"js"}  ,
-       {"url":"./assets/img/tecnologias/nodo-js.png", "name":"node"}  
+       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  ,
+       {"url":"./assets/img/tecnologias/php.png", "name":"php"}  , 
+       {"url":"./assets/img/tecnologias/sql.png", "name":"sql"}
     ]}
    ]
 }
