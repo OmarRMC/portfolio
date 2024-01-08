@@ -6,3 +6,4 @@ import {CargarProyectos} from './components/proyectos.js'
 import {cargarHabilidades} from './components/habilidades.js'
 CargarProyectos(); 
 cargarHabilidades(); 
+

@@ -23,9 +23,11 @@ async function CargarProyectos() {
               <i class="fa-solid fa-up-right-from-square" ></i>                    
           </span>
         </a>
+        <a href="${proyecto.url_github??'#'}" target="_blank">
           <span class="openGit">
               <i class="fa-brands fa-github" aria-hidden="true"></i>
           </span>
+        </a>
         <figure class="imgCard">
             <img src="${proyecto.image}" alt="Ordenamiento - Metodo burbuja">
             <span class="tituloProyecto">${proyecto.titulo}</span>

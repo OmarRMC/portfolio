@@ -1,6 +1,8 @@
 {
    "listaProyectos":[
     {"titulo":"Metodo Burbuja","image":"./assets/img/proyectos/Burbuja.jpg","Descripcion":"Ordenar un vector de forma animada aplicando  el metodo de burbuja", 
+    "url_web":"https://omarrmc.github.io/metodo-burbuja/",
+    "url_github":"https://github.com/OmarRMC/metodo-burbuja",
     "stack":[
        {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
        {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  , 
@@ -13,6 +15,14 @@
        {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  ,
        {"url":"./assets/img/tecnologias/php.png", "name":"php"}  , 
        {"url":"./assets/img/tecnologias/sql.png", "name":"sql"}
+    ]}, 
+    {"titulo":"Animacion 3D","image":"./assets/img/proyectos/Animacion3D.jpg","Descripcion":"Animacion en 3D de galeria de imagenes", 
+    "url_web":"https://omarrmc.github.io/Animacion/",
+    "url_github":"https://github.com/OmarRMC/Animacion",
+    "stack":[
+       {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
+       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"} 
     ]}
+   
    ]
 }
