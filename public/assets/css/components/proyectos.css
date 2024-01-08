@@ -124,3 +124,22 @@
     object-fit: cover;
     filter: drop-shadow(0px 0px 2px white );
 }
+.VolverAtras{
+    font-size: 1.5em;
+    position: absolute;
+    right: 10px;
+    top: 29px;   
+    cursor: pointer; 
+    transition-duration: color 0.5s, transform 1s;
+    color: rgb(104, 103, 103);
+}
+.btnAllProyectos{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.VolverAtras:hover{
+    color: blue;
+    transform: scale(1.2);
+}
