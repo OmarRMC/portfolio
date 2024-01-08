@@ -5,4 +5,3 @@ certificaciones.forEach(certificado => {
         window.open(ruta, "_blank");
     })
 })
-console.log("Hola")
