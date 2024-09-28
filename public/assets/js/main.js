@@ -13,7 +13,7 @@ switch (ruta) {
      const habilidades =await import('./components/habilidades.js');
      habilidades["cargarHabilidades"]();       
      proyectos = await import('./components/proyectos.js');
-     proyectos["CargarProyectos"]();      
+     proyectos["CargarProyectosN"](3);      
 
     break;
   case "/proyectos.html":
