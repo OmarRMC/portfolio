@@ -50,7 +50,7 @@ Soy un estudiante avanzado de Informática en la Universidad Mayor de San André
 
 ## 📫 Contacto
 
-Si estás interesado en colaborar o deseas saber más sobre mis proyectos, no dudes en contactarme:
+Si estás interesado  de un programador, no dudes en contactarme:
 
 - **Email**: mamani.orc@gmail.com
 - **Teléfono**: +591 75240883
