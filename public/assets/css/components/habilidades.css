@@ -34,6 +34,18 @@
     height: 100%;
     background: blue;
     transition: width 1s ;
+    
+}
+
+.habilidades-descripcion {
+    position: relative;
+    background: rgb(24, 163, 206) ;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-left: 8px solid rgb(17, 0, 255) ;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media screen and (max-width:650px) {

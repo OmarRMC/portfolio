@@ -9,6 +9,6 @@
         {"name":"sql", "url":"./assets/img/tecnologias/sql.png","porcentaje":50,"color":"#D0A802"}, 
         {"name":"git", "url":"./assets/img/tecnologias/git.png","porcentaje":60,"color":"#D0A802"} , 
         {"name":"React", "url":"./assets/img/tecnologias/ReactJS.png","porcentaje":50,"color":"#27C209"} , 
-        {"name":"PHP", "url":"./assets/img/tecnologias/php.png","porcentaje":10,"color":"#FF5733"} 
+        {"name":"PHP", "url":"./assets/img/tecnologias/php.png","porcentaje":40,"color":"#FF5733"} 
     ]
 }

@@ -32,6 +32,8 @@ async function CargarProyectos() {
             <img src="${proyecto.image}" alt="Ordenamiento - Metodo burbuja">
             <span class="tituloProyecto">${proyecto.titulo}</span>
         </figure>
+     <div style="position: relative;">
+        <div class="capa"></div>
         <main class="mainCard">             
            <p class="descripcion">${proyecto.Descripcion}</p>
         </main>
@@ -40,6 +42,7 @@ async function CargarProyectos() {
                 CargarStack(proyecto.stack)
             }
         </footer>
+        </div>
       </div>
 
       `
@@ -74,10 +77,7 @@ const callback= (entries, observer)=>{
     });
 }
 
-
 const observer= new IntersectionObserver(callback, {root:null , rootMargin:'0px', threshold:0.3})
-
-
 
 export {CargarProyectos}; 
 

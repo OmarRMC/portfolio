@@ -5,9 +5,11 @@ let proyectos;
 switch (ruta) {
   case "/":
   case "/index.html":
+     await import("./components/home.js"); 
      await import('./components/nav.js'); 
      await import('./components/about.js');
      await import('./components/certificados.js');
+    
      const habilidades =await import('./components/habilidades.js');
      habilidades["cargarHabilidades"]();       
      proyectos = await import('./components/proyectos.js');
@@ -48,3 +50,4 @@ function volverHome() {
               window.location.pathname="/"
   })
 }
+
