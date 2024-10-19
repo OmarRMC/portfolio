@@ -1,49 +1,161 @@
 {
-   "listaProyectos":[
-      {"titulo":"Juego Math","image":"./assets/img/proyectos/JuegoMath.jpg","Descripcion":"Es un juego de matemáticas con cuatro niveles: Básico, Intermedio, Avanzado y Pro. Los jugadores resuelven sumas, restas, multiplicaciones y divisiones que se vuelven más difíciles en cada nivel. En los últimos niveles hay un temporizador para aumentar el reto. Los usuarios pueden crear una cuenta, iniciar sesión y ver sus puntuaciones.", 
-    "url_web":"https://omarrmc.github.io/juego-math/",
-    "url_github":"https://github.com/OmarRMC/juego-math",
-    "stack":[
-       {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
-       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  , 
-       {"url":"./assets/img/tecnologias/js.png", "name":"js"}  , 
-       {"url":"./assets/img/tecnologias/ReactJS.png", "name":"ReactTS"}  , 
-       {"url":"./assets/img/tecnologias/TS.png", "name":"Ts"}  , 
-       {"url":"./assets/img/tecnologias/Bootstrap.png", "name":"Bootsatrap"}  
-    ]}, 
-    {"titulo":"Gestion Horarios/Tareas","image":"./assets/img/proyectos/GestionHorarios.png","Descripcion":"Permite a los usuarios autenticarse con Google para gestionar sus horarios, archivos y listas de tareas, y para el almacenamiento se usa los servicios de Firebase", 
-    "url_web":"https://proyecto-ormc.web.app/",
-    "url_github":"https://github.com/OmarRMC/",
-    "stack":[
-       {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
-       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"} , 
-       {"url":"./assets/img/tecnologias/js.png", "name":"css3"} , 
-       {"url":"./assets/img/tecnologias/ReactJS.png", "name":"css3"} , 
-       {"url":"./assets/img/tecnologias/firebase.png", "name":"css3"} 
-    ]}, 
-    {"titulo":" Sistema de contactos","image":"./assets/img/proyectos/SistemaDeContactos.jpg","Descripcion":"Sistema de contactos con usuarios y base de datos <br> Adm:omar@gmail.com , pass:omar <br> user:juan@gmail.com , pass:juan", 
-    "url_web":"https://culicid-paragraph.000webhostapp.com/proyecto_php/contactos",
-    "stack":[
-       {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
-       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  ,
-       {"url":"./assets/img/tecnologias/php.png", "name":"php"}  , 
-       {"url":"./assets/img/tecnologias/sql.png", "name":"sql"}
-    ]}, 
-    {"titulo":"Metodo Burbuja","image":"./assets/img/proyectos/Burbuja.jpg","Descripcion":"Ordenar un vector de forma animada aplicando  el metodo de burbuja", 
-    "url_web":"https://omarrmc.github.io/metodo-burbuja/",
-    "url_github":"https://github.com/OmarRMC/metodo-burbuja",
-    "stack":[
-       {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
-       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"}  , 
-       {"url":"./assets/img/tecnologias/js.png", "name":"js"}  
-    ]}, 
-    
-    {"titulo":"Animacion 3D","image":"./assets/img/proyectos/Animacion3D.jpg","Descripcion":"Animacion en 3D de galeria de imagenes", 
-    "url_web":"https://omarrmc.github.io/Animacion/",
-    "url_github":"https://github.com/OmarRMC/",
-    "stack":[
-       {"url":"./assets/img/tecnologias/html-5.png", "name":"html"}  ,       
-       {"url":"./assets/img/tecnologias/css-3.png", "name":"css3"} 
-    ]}
+   "listaProyectos": [
+      {
+         "titulo": "Juego Math - Back End",
+         "image": "./assets/img/proyectos/juego-math-back.png",
+         "Descripcion": "El backend maneja la lógica del juego, autenticación de usuarios y gestión de datos. Se utiliza autenticación JWT para proteger las rutas y cifrar contraseñas, además de administrar los datos del juego y usuarios de forma segura.",
+         "url_web": "https://juego-math-back.vercel.app/api-docs",
+         "url_github": "https://github.com/OmarRMC/juego-math-back",
+         "stack": [
+            {
+               "url": "./assets/img/tecnologias/nodo-js.png",
+               "name": "html"
+            },
+            {
+               "url": "./assets/img/tecnologias/TS.png",
+               "name": "css3"
+            },
+            {
+               "url": "./assets/img/tecnologias/js.png",
+               "name": "js"
+            },            
+            {
+               "url": "./assets/img/tecnologias/jwt-3.svg",
+               "name": "Ts"
+            },
+            {
+               "url": "./assets/img/tecnologias/mongodb.png",
+               "name": "Bootsatrap"
+            }
+         ]
+      },
+      {
+         "titulo": "Juego Math - Front End",
+         "image": "./assets/img/proyectos/JuegoMath.jpg",
+         "Descripcion": "Es un juego de matemáticas con cuatro niveles: Básico, Intermedio, Avanzado y Pro. Los jugadores resuelven sumas, restas, multiplicaciones y divisiones que se vuelven más difíciles en cada nivel. En los últimos niveles hay un temporizador para aumentar el reto. Los usuarios pueden crear una cuenta, iniciar sesión y ver sus puntuaciones.",
+         "url_web": "https://omarrmc.github.io/juego-math/",
+         "url_github": "https://github.com/OmarRMC/juego-math",
+         "stack": [
+            {
+               "url": "./assets/img/tecnologias/html-5.png",
+               "name": "html"
+            },
+            {
+               "url": "./assets/img/tecnologias/css-3.png",
+               "name": "css3"
+            },
+            {
+               "url": "./assets/img/tecnologias/js.png",
+               "name": "js"
+            },
+            {
+               "url": "./assets/img/tecnologias/chartjs.png",
+               "name": "ChartJS"
+            },
+            {
+               "url": "./assets/img/tecnologias/ReactJS.png",
+               "name": "ReactTS"
+            },
+            {
+               "url": "./assets/img/tecnologias/TS.png",
+               "name": "Ts"
+            },
+            {
+               "url": "./assets/img/tecnologias/Bootstrap.png",
+               "name": "Bootsatrap"
+            }
+         ]
+      },
+      {
+         "titulo": "Gestion Horarios/Tareas",
+         "image": "./assets/img/proyectos/GestionHorarios.png",
+         "Descripcion": "Permite a los usuarios autenticarse con Google para gestionar sus horarios, archivos y listas de tareas, y para el almacenamiento se usa los servicios de Firebase",
+         "url_web": "https://proyecto-ormc.web.app/",
+         "url_github": "https://github.com/OmarRMC/",
+         "stack": [
+            {
+               "url": "./assets/img/tecnologias/html-5.png",
+               "name": "html"
+            },
+            {
+               "url": "./assets/img/tecnologias/css-3.png",
+               "name": "css3"
+            },
+            {
+               "url": "./assets/img/tecnologias/js.png",
+               "name": "css3"
+            },
+            {
+               "url": "./assets/img/tecnologias/ReactJS.png",
+               "name": "css3"
+            },
+            {
+               "url": "./assets/img/tecnologias/firebase.png",
+               "name": "css3"
+            }
+         ]
+      },
+      {
+         "titulo": " Sistema de contactos",
+         "image": "./assets/img/proyectos/SistemaDeContactos.jpg",
+         "Descripcion": "Sistema de contactos con usuarios y base de datos <br> Adm:omar@gmail.com , pass:omar <br> user:juan@gmail.com , pass:juan",
+         "url_web": "https://culicid-paragraph.000webhostapp.com/proyecto_php/contactos",
+         "stack": [
+            {
+               "url": "./assets/img/tecnologias/html-5.png",
+               "name": "html"
+            },
+            {
+               "url": "./assets/img/tecnologias/css-3.png",
+               "name": "css3"
+            },
+            {
+               "url": "./assets/img/tecnologias/php.png",
+               "name": "php"
+            },
+            {
+               "url": "./assets/img/tecnologias/sql.png",
+               "name": "sql"
+            }
+         ]
+      },
+      {
+         "titulo": "Metodo Burbuja",
+         "image": "./assets/img/proyectos/Burbuja.jpg",
+         "Descripcion": "Ordenar un vector de forma animada aplicando  el metodo de burbuja",
+         "url_web": "https://omarrmc.github.io/metodo-burbuja/",
+         "url_github": "https://github.com/OmarRMC/metodo-burbuja",
+         "stack": [
+            {
+               "url": "./assets/img/tecnologias/html-5.png",
+               "name": "html"
+            },
+            {
+               "url": "./assets/img/tecnologias/css-3.png",
+               "name": "css3"
+            },
+            {
+               "url": "./assets/img/tecnologias/js.png",
+               "name": "js"
+            }
+         ]
+      },
+      {
+         "titulo": "Animacion 3D",
+         "image": "./assets/img/proyectos/Animacion3D.jpg",
+         "Descripcion": "Animacion en 3D de galeria de imagenes",
+         "url_web": "https://omarrmc.github.io/Animacion/",
+         "url_github": "https://github.com/OmarRMC/",
+         "stack": [
+            {
+               "url": "./assets/img/tecnologias/html-5.png",
+               "name": "html"
+            },
+            {
+               "url": "./assets/img/tecnologias/css-3.png",
+               "name": "css3"
+            }
+         ]
+      }
    ]
 }

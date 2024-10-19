@@ -10,6 +10,7 @@
     padding: 0px 80px;
     transition: background 1s cubic-bezier(0.23, 1, 0.320, 1);
     font-size: 1.2em;
+
 }
 .navar .logo{
     display: flex;
@@ -91,7 +92,7 @@
          max-height: 200px;
          background: rgb(10, 53, 148);  
          visibility: visible; 
-         z-index: 1;  
+         z-index: 4;  
         }
         .navar > .showItemsNav{
             padding: 5px 30px 20px;    

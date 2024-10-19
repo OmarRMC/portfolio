@@ -2,14 +2,15 @@
 import './components/flechaAriba.js'
 const ruta=window.location.pathname; 
 let proyectos; 
+let resCestificados; 
 switch (ruta) {
   case "/":
   case "/index.html":
      await import("./components/home.js"); 
      await import('./components/nav.js'); 
      await import('./components/about.js');
-     await import('./components/certificados.js');
-    
+     resCestificados = await import('./components/certificados.js');
+     resCestificados["cargarCertificados"](5)
      const habilidades =await import('./components/habilidades.js');
      habilidades["cargarHabilidades"]();       
      proyectos = await import('./components/proyectos.js');
@@ -22,10 +23,9 @@ switch (ruta) {
     volverHome(); 
     break 
   case "/certificados.html": 
-    import("./components/certificados.js").catch((error)=>{
-      console.log(error)
-    })
-    volverHome(); 
+    resCestificados = await import('./components/certificados.js');
+     resCestificados["cargarCertificados"]()
+     volverHome(); 
   break  
   default:
     console.log("no se encontro la ruta");

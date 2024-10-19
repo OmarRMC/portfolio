@@ -48,11 +48,40 @@
     transform: translateX(-50%);
 }
 
+.blandas > .habilidades-descripcion{
+    background: linear-gradient(45deg , rgb(119, 73, 245), rgb(51, 17, 145));
+    box-shadow: 1px 5px 1px rgb(0, 17, 255);
+
+    cursor: pointer;
+}
+@keyframes habilidadesBlandas {
+    0%{
+        
+    }
+    30%{
+        transform: translateX(-200px) rotate(25deg);
+    }
+    50%{
+        
+    }
+    
+    80%{
+        transform: translateX(-200px) rotate(-25deg);
+    }
+    
+    100%{
+
+
+    }
+}
 @media screen and (max-width:650px) {
     .cardHabilidad{    
-        width: 100px;        
+        width: 80px;        
     }
     .ListaHabidades{
         width: 90%;
+    }
+    .habilidades-descripcion {
+        width: 100%;
     }
 }

@@ -1,13 +1,21 @@
+#main-home{
+    position: relative;
+    height: calc( 90vh - var(--AlturaNav) - 5px );
+    
+    
+}
 #home {
+    position: relative;
     background: var(--colorNav);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 0px 50px;
-    min-height: calc( 90vh - var(--AlturaNav));
+    height: 100%;    
     overflow: hidden;
-    padding-top: 10px;
+    padding-top: 10px;   
+    animation: var(--animacionFondoHome); 
 }
 
 .photo{
@@ -34,6 +42,7 @@
 }
 
 .photo>img {
+    position: relative;
     width: 100%;
     background: white; 
     border-radius: 50%;
@@ -41,9 +50,11 @@
     height: 100%;
     object-fit: cover;
     object-position: 0 0;
+    z-index: 2;
 }
 .info {
     font-weight: bold;
+    z-index: 6;
 }
 .info >h2>span{
     display: block;
@@ -110,14 +121,111 @@
 .cv{
     color: rgb(233, 53, 53);
 }
-
-#AnimacionEndHome> svg {
+#AnimacionEndHome{
+    position: relative;
+}
+#AnimacionEndHome> svg {    
     background: var(--colorNav);
+    position: relative;
     width: 100%;
     height: 50px;  
+    animation:  var(--animacionFondoHome); 
+    
 }
 
 #AnimacionEndHome> svg > path{
     fill: white;
 }
 
+.Hola{
+    position: absolute;
+    width: 100%;
+    height: calc( var(--AlturaNav) + 5px );
+    background: #0a212e;
+    margin: 0px;
+    overflow: hidden;
+    animation: var(--animacionFondoHome); 
+    z-index: -1;
+}
+
+.waves {
+    position: absolute;
+    top: calc( 50% - 25px );
+    left: calc( 50% - 25px );    
+    background: rgba(255, 255, 255, 0.3);    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+  }
+  .waves:before {
+    position: absolute;
+    background: white;
+    width: 80px;
+    height: 80px;
+    margin-left: -12px;
+    margin-top: -12px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    animation: wave-animate 3s infinite ease-out;
+  }
+  .waves:after {
+    position: absolute;
+    background: white;
+    margin-left: -12px;
+    margin-top: -12px;
+    width: 80px;
+    height: 80px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    opacity: 0;
+    animation: wave-animate 3s 1.5s infinite ease-out;
+  }
+
+  
+
+@keyframes wave-animate {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+    transform-origin: center;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+    transform-origin: center;
+  }
+}
+
+@keyframes color-loop {
+  0% {
+    background: #6309f5;
+  }
+  50% {
+    background: #182eac;
+  }
+  100% {
+    background: #6309f5;
+  }
+}
+
+@media screen and (max-width: 800px) {        
+.waves {
+    width: 50px;
+    height: 50px;
+    
+  }
+  .waves:before {
+    width: 65px;
+    height: 65px;    
+  }
+  .waves:after {
+    width: 65px;
+    height: 65px;
+
+  }
+}

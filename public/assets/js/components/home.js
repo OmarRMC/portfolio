@@ -1,5 +1,5 @@
 
-    const text = "Front End Developer";
+    const text = "Web Developer";
     const typingElement = document.getElementById('developer-txt');
     typingElement.textContent=""; 
     

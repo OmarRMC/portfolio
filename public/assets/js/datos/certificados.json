@@ -1,0 +1,18 @@
+{
+    "lista_Certificados":[
+        {"url":"./assets/img/certificados/certificado-php.jpg", "descripcion":"certificado de PHP", "alt":"php"}, 
+        {"url":"./assets/img/certificados/ccbol_participante_optimized.png", "descripcion":"certificado de CCBOL", "alt":"CCBOL"},
+        {"url":"./assets/img/certificados/clei_participante_optimized.png", "descripcion":"certificado de CLEI", "alt":"clei"},
+        {"url":"./assets/img/certificados/ev_asoc_participante_optimized.png", "descripcion":"Certificado Eventos asociados CLEI", "alt":"eventos asociados"},
+        {"url":"./assets/img/certificados/certificado-termux-optimized.jpg", "descripcion":"certificado HACKING-TERMUX", "alt":"linux-termux"},
+        {"url":"./assets/img/certificados/Auxiliar2024.jpg", "descripcion":"Auxilar de Docencia", "alt":"Auxiliar de Docencia UMSA"},
+        {"url":"./assets/img/certificados/Informatica2022.jpg", "descripcion":"Certificados de Cursos de Informatica", "alt":"cursos_informatica"},
+        {"url":"./assets/img/certificados/Fcpn2021.jpg", "descripcion":"Certificado de FCPN", "alt":"Certificado de la facultad"}
+
+
+    ]
+}
+
+
+ 
+
