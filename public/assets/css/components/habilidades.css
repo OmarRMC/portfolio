@@ -39,19 +39,37 @@
 
 .habilidades-descripcion {
     position: relative;
-    background: rgb(24, 163, 206) ;
+    background:   linear-gradient(to bottom, rgba(22, 60, 131, 0.9), rgba(3, 107, 148, 0.9)), 
+    url('../../img/Programacion.jpg');
     padding: 10px 30px;
     border-radius: 10px;
     border-left: 8px solid rgb(17, 0, 255) ;
     width: 75%;
     left: 50%;
     transform: translateX(-50%);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    text-shadow: 0px 0px 2px  rgb(80, 80, 80) ;
+
 }
 
-.blandas > .habilidades-descripcion{
-    background: linear-gradient(45deg , rgb(119, 73, 245), rgb(51, 17, 145));
-    box-shadow: 1px 5px 1px rgb(0, 17, 255);
+.habilidades-descripcion  > ul {
+    list-style: none;
 
+}
+
+.habilidades-descripcion  > ul > li b{
+   
+}
+.habilidades-descripcion  > ul > li::before {
+    position: relative;
+    content: "✔";
+    left: -10px;
+}
+.blandas > .habilidades-descripcion{
+    background: linear-gradient(45deg , rgb(105, 51, 252), rgb(0, 89, 255));
+    box-shadow: 1px 5px 1px rgb(0, 17, 255);
     cursor: pointer;
 }
 @keyframes habilidadesBlandas {
