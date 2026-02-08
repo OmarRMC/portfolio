@@ -1,0 +1,93 @@
+.ListaCertificados{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.CardCertificado{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.CardCertificado:hover{
+    border-color: var(--accent-border);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.CardCertificado::after{
+    content: attr(data-title);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(4px);
+    display: grid;
+    place-content: center;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 16px;
+    transition: top 0.35s ease;
+}
+
+.CardCertificado:hover::after{
+    top: 0;
+}
+
+.CardCertificado > img {
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.CardCertificado:hover > img{
+    transform: scale(1.05);
+}
+
+.VolverAtras{
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.2s ease, transform 0.2s ease;
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.VolverAtras:hover{
+    color: var(--accent);
+    transform: translateX(-3px);
+}
+
+.btnAllCertificados{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+#Certificados .btnAllProyectos{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:650px) {
+    .ListaCertificados{
+        grid-template-columns: 1fr;
+    }
+}

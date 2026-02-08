@@ -1,103 +1,133 @@
 .navar{
-    background: var(--colorNav);
     width: 100%;
     display: flex;
     justify-content: space-between;
     height: var(--AlturaNav);
     align-items: center;
-    color: white;
-    font-weight: bold;
-    padding: 0px 80px;
-    transition: background 1s cubic-bezier(0.23, 1, 0.320, 1);
-    font-size: 1.2em;
-
+    color: var(--text-primary);
+    font-weight: 500;
+    padding: 0 40px;
+    font-size: 0.95em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    animation: navSlideDown 0.5s ease both;
 }
+
+@keyframes navSlideDown {
+    0%   { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 .navar .logo{
     display: flex;
-    gap: 10px;
+    gap: 8px;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: -0.01em;
 }
+
+.navar .logo span{
+    color: var(--accent);
+}
+
 .navar >.baras {
-    cursor: pointer;  
+    cursor: pointer;
     visibility: hidden;
 }
-.navar> .baras > .bar{
-    width: 25px;
+
+.navar > .baras > .bar{
+    width: 20px;
     height: 2px;
-    background: white;
-    margin: 5px;
-    transition: transform 250ms , opacity 0.5s ;
-} 
+    background: var(--text-secondary);
+    margin: 4px;
+    border-radius: 1px;
+    transition: transform 250ms ease, opacity 250ms ease;
+}
+
 .animacionBar > .bar:nth-child(1){
-    transform: translateY(7px) rotate(45deg);
-    background: rgb(54, 240, 240) ;
+    transform: translateY(6px) rotate(45deg);
+    background: var(--accent);
 }
-.animacionBar> .bar:nth-child(2){
-   opacity: 0;
+
+.animacionBar > .bar:nth-child(2){
+    opacity: 0;
 }
-.animacionBar> .bar:nth-child(3){
-    transform: translateY(-7px) rotate(-45deg);
-    background: rgb(54, 240, 240) 
+
+.animacionBar > .bar:nth-child(3){
+    transform: translateY(-6px) rotate(-45deg);
+    background: var(--accent);
 }
+
 .navar > .NavItems{
     list-style: none;
     display: flex;
-    gap: 30px;
-    
-    transition: max-height 500ms cubic-bezier(0.165, 0.84, 0.44, 1), background 1s cubic-bezier(0.23, 1, 0.320, 1), padding 0.4s ;
+    gap: 32px;
+    transition: max-height 400ms ease, background 300ms ease, padding 300ms ease;
 }
-.navar>.NavItems> li{
+
+.navar > .NavItems > li{
     position: relative;
     cursor: pointer;
-    
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 0.9em;
+    transition: color 200ms ease;
 }
-.navar>.NavItems> li::after {
+
+.navar > .NavItems > li:hover{
+    color: var(--text-primary);
+}
+
+.navar > .NavItems > li::after {
     content: "";
     position: absolute;
-    height: 2px;
+    height: 1px;
     width: 0%;
-    background: cyan ;
+    background: var(--accent);
     left: 0;
-    bottom: -12px;
-    transition: width 1s ;
+    bottom: -6px;
+    transition: width 200ms ease;
 }
 
-
-.navar>.NavItems> li:hover::after{
-    animation: baraIten 200ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards; 
-}
-@keyframes baraIten {
-    100%{
-        width: 100%;
-    }
+.navar > .NavItems > li:hover::after{
+    width: 100%;
 }
 
 @media screen and (max-width:650px) {
     .navar{
-        padding: 0px 40px;
-        
-    } 
+        padding: 0 20px;
+    }
     .navar > .NavItems{
-        flex-direction: column;   
+        flex-direction: column;
         position: absolute;
-        gap: 20px;
+        gap: 12px;
         top: var(--AlturaNav);
         left: 0;
         width: 100%;
-        background: var(--colorNav);
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
         max-height: 0;
-        padding: 0px 30px;
+        padding: 0 20px;
         visibility: hidden;
-      }
-      .navar > .showItemsNav, .navar.showItemsNav {      
-         max-height: 200px;
-         background: rgb(10, 53, 148);  
-         visibility: visible; 
-         z-index: 4;  
-        }
-        .navar > .showItemsNav{
-            padding: 5px 30px 20px;    
-        }
-      .navar >.baras{
-         visibility: visible;
-      }    
+        border-bottom: 1px solid var(--border);
+        overflow: hidden;
+    }
+    .navar > .showItemsNav, .navar.showItemsNav {
+        max-height: 200px;
+        visibility: visible;
+        z-index: 4;
+    }
+    .navar > .showItemsNav{
+        padding: 8px 20px 20px;
+    }
+    .navar > .baras{
+        visibility: visible;
+    }
 }

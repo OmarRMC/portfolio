@@ -2,104 +2,137 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 50px ; 
+    gap: 10px;
     justify-content: center;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 24px auto 0;
+    max-width: 700px;
 }
 
-.cardHabilidad{    
-    width: 150px;
-    height: 90px;
-    display: flex; 
+.cardHabilidad{
+    width: 140px;
+    height: 70px;
+    display: flex;
     align-items: center;
-    gap:10px ;    
-    border-bottom: 2px solid rgb(218, 218, 218) ;        
+    gap: 10px;
+    padding: 10px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.cardHabilidad  img {
-    width: 25%;   
+.cardHabilidad:hover{
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+}
+
+.cardHabilidad img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.cardHabilidad:hover img {
+    transform: scale(1.15);
 }
 
 .line{
-    width: 60%;
-    background: rgb(196, 196, 196) ;
-    height: 5px;
-    border-radius: 10px;
+    flex: 1;
+    background: var(--bg-elevated);
+    height: 3px;
+    border-radius: 2px;
     overflow: hidden;
 }
+
 .porcentage{
     width: 0%;
     height: 100%;
-    background: blue;
-    transition: width 1s ;
-    
+    background: var(--accent);
+    border-radius: 2px;
+    transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .habilidades-descripcion {
     position: relative;
-    background:   linear-gradient(to bottom, rgba(22, 60, 131, 0.9), rgba(3, 107, 148, 0.9)), 
-    url('../../img/Programacion.jpg');
-    padding: 10px 30px;
-    border-radius: 10px;
-    border-left: 8px solid rgb(17, 0, 255) ;
-    width: 75%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center; 
-    text-shadow: 0px 0px 2px  rgb(80, 80, 80) ;
-
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    background-image: none;
+    text-shadow: none;
+    transition: border-color 0.3s ease;
 }
 
-.habilidades-descripcion  > ul {
+.habilidades-descripcion:hover{
+    border-color: var(--border-hover);
+}
+
+.habilidades-descripcion > ul {
     list-style: none;
-
 }
 
-.habilidades-descripcion  > ul > li b{
-   
-}
-.habilidades-descripcion  > ul > li::before {
+.habilidades-descripcion > ul > li{
+    margin-bottom: 6px;
+    padding-left: 16px;
     position: relative;
-    content: "✔";
-    left: -10px;
+    font-size: 0.92em;
 }
+
+.habilidades-descripcion > ul > li b{
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.habilidades-descripcion > ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+    transition: transform 0.2s ease;
+}
+
+.habilidades-descripcion > ul > li:hover::before {
+    transform: scale(1.8);
+}
+
+.blandas{
+    padding-top: 0 !important;
+}
+
 .blandas > .habilidades-descripcion{
-    background: linear-gradient(45deg , rgb(105, 51, 252), rgb(0, 89, 255));
-    box-shadow: 1px 5px 1px rgb(0, 17, 255);
-    cursor: pointer;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    box-shadow: none;
+    cursor: default;
 }
-@keyframes habilidadesBlandas {
-    0%{
-        
-    }
-    30%{
-        transform: translateX(-200px) rotate(25deg);
-    }
-    50%{
-        
-    }
-    
-    80%{
-        transform: translateX(-200px) rotate(-25deg);
-    }
-    
-    100%{
 
-
-    }
+.blandas > .habilidades-descripcion > ul > li::before{
+    background: rgba(99, 102, 241, 0.7);
 }
+
+.blandas > .habilidades-descripcion b i{
+    color: rgba(99, 102, 241, 0.9);
+    font-style: normal;
+}
+
 @media screen and (max-width:650px) {
-    .cardHabilidad{    
-        width: 80px;        
+    .cardHabilidad{
+        width: 110px;
     }
     .ListaHabidades{
-        width: 90%;
+        width: 100%;
     }
     .habilidades-descripcion {
         width: 100%;
+        padding: 16px;
     }
 }

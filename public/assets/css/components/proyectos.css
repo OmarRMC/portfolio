@@ -1,193 +1,272 @@
-.listaProyectos{    
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;    
+.listaProyectos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
 }
+
 .contenedorCard{
     position: relative;
-    transition: transform 0.5s;    
-    transform: scale(0.7);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: scale(0.9) translateY(20px);
+    opacity: 0;
+    width: 100%;
 }
+
 .startShowCard{
-    transform: scale(1);
+    transform: scale(1) translateY(0);
+    opacity: 1;
 }
+
 .openGit{
-    position: absolute; 
+    position: absolute;
     left: 10px;
     top: 10px;
-    z-index: 2;    
-    font-size: 2.5em;
-    transition: transform 0.5s;
-    filter: drop-shadow(1px 1px 1px black);
-    color: black;
-    
-}
-.openGit:hover{
-    transform: scale(1.2);
-}
-.openProyect{
-    position: absolute;
-    z-index: 2;
-    top: 10px;
-    right: 10px;
-    font-size: 1.1em;
-    color: rgb(8, 11, 184) ;
-    border-radius: 50%;
-    padding: 8px;    
-    width: 39px;
-    height: 39px;
+    z-index: 3;
+    font-size: 1.2em;
+    color: var(--text-primary);
+    width: 32px;
+    height: 32px;
     display: grid;
     place-content: center;
-    filter:drop-shadow( 1px 1px 2px blue) ;
-    transition: transform 0.5s, background 0.4s ;
-    background: #ffffff;
+    border-radius: 8px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+    transition: background 0.3s ease, transform 0.3s ease;
+    filter: none;
 }
+
+.openGit:hover{
+    background: var(--bg-card);
+    transform: scale(1.1);
+}
+
+.openProyect{
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    font-size: 0.75em;
+    color: var(--accent);
+    border-radius: 8px;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-content: center;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+    transition: background 0.35s ease, color 0.35s ease, transform 0.35s ease;
+    filter: none;
+}
+
 .contenedorCard:hover .openProyect{
-    transform: translateX(18px) translateY(-18px) scale(1.1);
-    
+    background: var(--accent);
+    color: var(--bg-primary);
+    transform: scale(1.1);
 }
+
 .contenedorCard:hover{
     cursor: pointer;
-    
 }
-.cardProyecto{
-    width: 250px;
-    height: 300px;
-    background: linear-gradient(45deg ,rgb(219, 219, 219) , #ffffff);
-    border-radius: 10px;
-    overflow: hidden;  
-    border: 1px solid blue ;
-  
-}
-.cardProyecto:hover{
-    box-shadow: 0px 0px 10px black;  
 
+/* Card layout: flex column so footer sticks to bottom */
+.cardProyecto{
+    width: 100%;
+    height: 380px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: border-color 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+}
+
+.cardProyecto:hover{
+    border-color: var(--accent-border);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
 }
 
 .imgCard{
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 60%;
+    height: 50%;
     overflow: hidden;
-
-    transition: height 200ms  cubic-bezier(0.075, 0.82, 0.165, 1)
+    flex-shrink: 0;
+    transition: height 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 .imgCard > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center 0;
+    transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cardProyecto:hover .imgCard > img{
+    transform: scale(1.06);
+}
+
+/* Inner content area: flex-grow to fill remaining space */
+.cardProyecto > div[style]{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .mainCard{
-  color: rgb(0, 0, 0);
-  font-size: 0.8em;
-  position: relative;  
-  transition: color 250ms ease;
-  max-height: 80px;  
-  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-  overflow: hidden;
+    color: var(--text-secondary);
+    font-size: 0.85em;
+    position: relative;
+    transition: color 0.35s ease;
+    max-height: 100px;
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    overflow: hidden;
+    line-height: 1.5;
+    flex: 1;
 }
-.tituloProyecto{    
+
+.tituloProyecto{
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);    
+    left: 0;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.95), transparent);
     display: block;
-    padding: 5px 10px;
-    color: rgb(255, 255, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    filter: drop-shadow(0px 0px 3px rgb(0, 0, 0) );
-    font-style: italic;
-    
-  }  
-  .tituloProyecto::after{
-    position: absolute;
-    content: "";
-    top:0; 
-    left:100%; 
-    width: 0px;
-    border-bottom: 14px solid transparent;
-    border-top: 14px solid transparent;
-    border-left: 20px solid  rgba(0, 0, 0, 0.3);
-  }
+    padding: 20px 12px 8px;
+    width: 100%;
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.85em;
+    filter: none;
+}
 
-  .descripcion{
-    padding: 6px 10px;
-    
-  }
+.tituloProyecto::after{ display: none; }
 
+.descripcion{
+    padding: 10px 14px;
+}
+
+/* Tech icons: pushed to bottom via margin-top auto */
 .foorderCard{
-   position: fixed;
-   bottom: 2px;
-   bottom: 5px;
-   width: 100%;
-   text-align: center;
-   
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 10px;
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid var(--border);
+    background: var(--bg-card);
 }
 
 .img_tecnologia{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 2px solid rgb(19, 62, 117) ;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
-.img_tecnologia> img {
+.img_tecnologia:hover{
+    border-color: var(--border-hover);
+    transform: scale(1.1);
+}
+
+.img_tecnologia > img {
     width: 100%;
-    object-fit: cover;
-    filter: drop-shadow(0px 0px 2px white );
+    object-fit: contain;
+    filter: none;
 }
+
 .VolverAtras{
-    font-size: 1.5em;
-    position: absolute;
-    right: 10px;
-    top: 29px;   
-    cursor: pointer; 
-    transition-duration: color 0.5s, transform 1s;
-    color: rgb(104, 103, 103);
-}
-.btnAllProyectos{
-    display: block;
-    text-align: center;
-    margin-top: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.2s ease, transform 0.2s ease;
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
 }
 
 .VolverAtras:hover{
-    color: blue;
-    transform: scale(1.2);
+    color: var(--accent);
+    transform: translateX(-3px);
 }
 
+.btnAllProyectos{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 24px auto 0;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85em;
+    padding: 8px 20px;
+    border: 1px solid var(--accent-border);
+    border-radius: 8px;
+    background: transparent;
+    transition: background 0.25s ease, transform 0.25s ease;
+    width: fit-content;
+}
+
+.btnAllProyectos:hover{
+    background: var(--accent-soft);
+    transform: translateY(-1px);
+}
+
+/* Overlay on hover - smoother animation */
 .capa{
-    background: rgb(77, 12, 161);
-    background: linear-gradient(0deg , rgb(108, 0, 248) , rgb(182, 125, 255) );
-    height: 400px;    
-    transform: rotate(40deg) translateX(-75%) translateY(75%);     
+    background: linear-gradient(0deg, rgba(56, 189, 248, 0.1), rgba(99, 102, 241, 0.08));
+    height: 500px;
+    transform: rotate(40deg) translateX(-75%) translateY(80%);
     position: absolute;
-    width: 350px;
-    transition: transform 500ms  cubic-bezier(0.74, 0.06, 0.4, 1.2);
+    width: 400px;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    pointer-events: none;
 }
 
-.cardProyecto:hover .capa  {
-    transform: rotate(40deg) translateX(-30%) translateY(-25%);
-    
+.cardProyecto:hover .capa {
+    transform: rotate(40deg) translateX(-30%) translateY(-30%);
 }
 
 .cardProyecto:hover .imgCard {
-    height: 40%;    
+    height: 35%;
 }
+
 .cardProyecto:hover .mainCard{
-    color: white ;
-    max-height: none;  
+    color: var(--text-primary);
+    max-height: none;
     mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
 }
 
-
 .imgCard::after{
-    /*content: attr();*/
-    content: "Hola";
+    content: "";
+    display: none;
+}
 
+#Proyectos .btnAllProyectos{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:650px) {
+    .listaProyectos{
+        grid-template-columns: 1fr;
+    }
 }
