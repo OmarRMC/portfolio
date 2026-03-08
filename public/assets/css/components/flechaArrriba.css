@@ -1,22 +1,35 @@
 .VoverInicio{
-   position: fixed;
-   bottom: -100px;
-   right: 20px;
-   width: 50px;
-   height: 50px;
-   background: blue;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 50%;
-   transition:bottom 1s ;
-   cursor: pointer;
-   z-index: 10;
-   box-shadow: 0px 0px 2px white;
+    position: fixed;
+    bottom: -80px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: bottom 0.4s ease, border-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+    z-index: 50;
 }
+
+.VoverInicio:hover{
+    border-color: var(--accent-border);
+    transform: translateY(-2px);
+}
+
 .flechaUp{
-    color: #ffffff;
+    color: var(--text-muted);
+    font-size: 0.85em;
+    transition: color 0.2s ease;
 }
+
+.VoverInicio:hover .flechaUp{
+    color: var(--accent);
+}
+
 .MostrarFlecha{
     bottom: 20px;
 }
