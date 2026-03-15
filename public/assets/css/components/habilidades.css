@@ -2,33 +2,45 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
     margin: 24px auto 0;
     max-width: 700px;
 }
 
 .cardHabilidad{
-    width: 140px;
-    height: 70px;
+    position: relative;
+    width: 68px;
+    height: 68px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 6px;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 8px;
     transition: border-color 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+.cardHabilidad.visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease, border-color 0.2s ease;
 }
 
 .cardHabilidad:hover{
     border-color: var(--border-hover);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .cardHabilidad img {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     object-fit: contain;
     transition: transform 0.2s ease;
 }
@@ -37,21 +49,53 @@
     transform: scale(1.15);
 }
 
-.line{
-    flex: 1;
-    background: var(--bg-elevated);
-    height: 3px;
-    border-radius: 2px;
+.cardHabilidad__nombre {
+    font-size: 0.62rem;
+    color: var(--text-secondary);
+    text-align: center;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
-.porcentage{
-    width: 0%;
-    height: 100%;
-    background: var(--accent);
-    border-radius: 2px;
-    transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.cardHabilidad__tooltip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 10;
 }
+
+.cardHabilidad__tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-top-color: var(--border);
+}
+
+.cardHabilidad:hover .cardHabilidad__tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.cardHabilidad__tooltip--avanzado  { border-color: #22c55e; color: #22c55e; }
+.cardHabilidad__tooltip--intermedio { border-color: #38bdf8; color: #38bdf8; }
+.cardHabilidad__tooltip--basico    { border-color: #94a3b8; color: #94a3b8; }
 
 .habilidades-descripcion {
     position: relative;
@@ -126,7 +170,8 @@
 
 @media screen and (max-width:650px) {
     .cardHabilidad{
-        width: 110px;
+        width: 62px;
+        height: 62px;
     }
     .ListaHabidades{
         width: 100%;

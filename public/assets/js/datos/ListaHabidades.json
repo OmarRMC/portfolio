@@ -1,14 +1,25 @@
 {
     "ListaHabidades": [
-        {"name":"html", "url":"./assets/img/tecnologias/html-5.png","porcentaje":90,"color":"#74A103"}, 
-        {"name":"css", "url":"./assets/img/tecnologias/css-3.png","porcentaje":80,"color":"#74A103"}, 
-        {"name":"js", "url":"./assets/img/tecnologias/js.png","porcentaje":75,"color":"#27C209"},
-        {"name":"node js", "url":"./assets/img/tecnologias/nodo-js.png","porcentaje":65,"color":"#27C209"}, 
-        {"name":"python", "url":"./assets/img/tecnologias/piton.png","porcentaje":50,"color":"#FF5733"}, 
-        {"name":"java", "url":"./assets/img/tecnologias/java.png","porcentaje":70,"color":"#FF5733"}, 
-        {"name":"sql", "url":"./assets/img/tecnologias/sql.png","porcentaje":50,"color":"#D0A802"}, 
-        {"name":"git", "url":"./assets/img/tecnologias/git.png","porcentaje":60,"color":"#D0A802"} , 
-        {"name":"React", "url":"./assets/img/tecnologias/ReactJS.png","porcentaje":50,"color":"#27C209"} , 
-        {"name":"PHP", "url":"./assets/img/tecnologias/php.png","porcentaje":40,"color":"#FF5733"} 
+        {"name": "HTML",         "url": "./assets/img/tecnologias/html-5.png",       "nivel": "Avanzado"},
+        {"name": "CSS",          "url": "./assets/img/tecnologias/css-3.png",         "nivel": "Intermedio"},
+        {"name": "JavaScript",   "url": "./assets/img/tecnologias/js.png",            "nivel": "Intermedio"},
+        {"name": "TypeScript",   "url": "./assets/img/tecnologias/TS.png",            "nivel": "Intermedio"},
+        {"name": "React",        "url": "./assets/img/tecnologias/ReactJS.png",       "nivel": "Avanzado"},
+        {"name": "Tailwind CSS", "url": "./assets/img/tecnologias/tailwind.svg",      "nivel": "Intermedio"},
+        {"name": "Node.js",      "url": "./assets/img/tecnologias/nodo-js.png",       "nivel": "Intermedio"},
+        {"name": "PHP",          "url": "./assets/img/tecnologias/php.png",           "nivel": "Avanzado"},
+        {"name": "Python",       "url": "./assets/img/tecnologias/piton.png",         "nivel": "Básico"},
+        {"name": "MongoDB",      "url": "./assets/img/tecnologias/mongodb.png",       "nivel": "Básico"},
+        {"name": "Firebase",     "url": "./assets/img/tecnologias/firebase.png",      "nivel": "Intermedio"},
+        {"name": "MySQL",        "url": "./assets/img/tecnologias/mysql.svg",         "nivel": "Intermedio"},
+        {"name": "Git",          "url": "./assets/img/tecnologias/git.png",           "nivel": "Intermedio"},
+        {"name": "Laravel",      "url": "./assets/img/tecnologias/laravel.svg",       "nivel": "Intermedio"},
+        {"name": "Docker",       "url": "./assets/img/tecnologias/docker.svg",        "nivel": "Básico"},
+        {"name": "AWS",          "url": "./assets/img/tecnologias/aws.svg",           "nivel": "Básico"},
+        {"name": "PostgreSQL",   "url": "./assets/img/tecnologias/postgresql.svg",    "nivel": "Básico"},
+        {"name": "OpenAI",       "url": "./assets/img/tecnologias/openai.svg",        "nivel": "Básico"},
+        {"name": "LangChain",    "url": "./assets/img/tecnologias/langchain.svg",     "nivel": "Básico"},
+        {"name": "Arduino",      "url": "./assets/img/tecnologias/arduino.svg",       "nivel": "Intermedio"},
+        {"name": "Raspberry Pi", "url": "./assets/img/tecnologias/raspberrypi.svg",   "nivel": "Básico"}
     ]
 }

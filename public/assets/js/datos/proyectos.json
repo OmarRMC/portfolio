@@ -67,9 +67,9 @@
          ]
       },
       {
-         "titulo": "Gestion Horarios/Tareas",
+         "titulo": "Gestión Horarios/Tareas",
          "image": "./assets/img/proyectos/GestionHorarios.png",
-         "Descripcion": "Permite a los usuarios autenticarse con Google para gestionar sus horarios, archivos y listas de tareas, y para el almacenamiento se usa los servicios de Firebase",
+         "Descripcion": "Permite a los usuarios autenticarse con Google para gestionar sus horarios, archivos y listas de tareas, y para el almacenamiento se usan los servicios de Firebase.",
          "url_web": "https://proyecto-ormc.web.app/",
          "url_github": "https://github.com/OmarRMC/",
          "stack": [
@@ -96,7 +96,7 @@
          ]
       },
       {
-         "titulo": " Sistema de contactos",
+         "titulo": "Sistema de contactos",
          "image": "./assets/img/proyectos/SistemaDeContactos.jpg",
          "Descripcion": "Sistema de contactos con usuarios y base de datos <br> Adm:omar@gmail.com , pass:omar <br> user:juan@gmail.com , pass:juan",
          "url_web": "https://culicid-paragraph.000webhostapp.com/proyecto_php/contactos",
@@ -121,9 +121,9 @@
          ]
       },
       {
-         "titulo": "Metodo Burbuja",
+         "titulo": "Método Burbuja",
          "image": "./assets/img/proyectos/Burbuja.jpg",
-         "Descripcion": "Ordenar un vector de forma animada aplicando  el metodo de burbuja",
+         "Descripcion": "Ordenar un vector de forma animada aplicando el método de burbuja",
          "url_web": "https://omarrmc.github.io/metodo-burbuja/",
          "url_github": "https://github.com/OmarRMC/metodo-burbuja",
          "stack": [
@@ -142,9 +142,9 @@
          ]
       },
       {
-         "titulo": "Animacion 3D",
+         "titulo": "Animación 3D",
          "image": "./assets/img/proyectos/Animacion3D.jpg",
-         "Descripcion": "Animacion en 3D de galeria de imagenes",
+         "Descripcion": "Animación en 3D de galería de imágenes",
          "url_web": "https://omarrmc.github.io/Animacion/",
          "url_github": "https://github.com/OmarRMC/",
          "stack": [

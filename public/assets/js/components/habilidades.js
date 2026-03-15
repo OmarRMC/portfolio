@@ -1,55 +1,35 @@
-const ListaHabidadesDom= document.querySelector(".ListaHabidades"); 
-//import json from '../datos/ListaHabidades.json' assert {type:"json"}
-ListaHabidadesDom.innerHTML=""; 
-let json ; 
-async function cargarHabilidades() {
-    const data=await fetch('./assets/js/datos/ListaHabidades.json')
-    if(data){        
-        json = await data.json(); 
-    }
+const ListaHabidadesDom = document.querySelector(".ListaHabidades");
+ListaHabidadesDom.innerHTML = "";
 
-    let  listaHabi = json.ListaHabidades; 
-    
-    listaHabi.forEach(habilidad =>{
-        ListaHabidadesDom.innerHTML+=`
-        <div class="cardHabilidad">
-             <img alt="img-${habilidad.name}" src="${habilidad.url}">
-             <div class="line">
-                <div data-procentaje="${habilidad.porcentaje}" class="porcentage" style="background:${habilidad.color}"></div>
-             </div>
-        </div>
-        `
-    })
-    addObserver(); 
-}
-
-
-const config={
-     root:null , 
-     rootMargin:'0px', 
-     threshold:0.5
-}
-
-const callback= (entries , observer)=>{
-    entries.forEach(entry =>{
-        const nodo =entry.target ; 
-        if(entry.isIntersecting){
-             const porcentage=nodo.getAttribute('data-procentaje')
-             nodo.style.width=porcentage+"%"
-        }else {
-            nodo.style.width="0%"
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const cards = entry.target.querySelectorAll(".cardHabilidad");
+        if (entry.isIntersecting) {
+            cards.forEach((card, i) => {
+                card.classList.remove("visible");
+                setTimeout(() => card.classList.add("visible"), i * 50);
+            });
+        } else {
+            cards.forEach(card => card.classList.remove("visible"));
         }
-    })
+    });
+}, { threshold: 0.1 });
+
+async function cargarHabilidades() {
+    const data = await fetch('./assets/js/datos/ListaHabidades.json');
+    const json = await data.json();
+
+    json.ListaHabidades.forEach(habilidad => {
+        ListaHabidadesDom.innerHTML += `
+        <div class="cardHabilidad" data-nivel="${habilidad.nivel}">
+            <img alt="${habilidad.name}" src="${habilidad.url}">
+            <span class="cardHabilidad__nombre">${habilidad.name}</span>
+            <span class="cardHabilidad__tooltip cardHabilidad__tooltip--${habilidad.nivel.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')}">${habilidad.nivel}</span>
+        </div>
+        `;
+    });
+
+    observer.observe(ListaHabidadesDom);
 }
 
-
-const observer = new IntersectionObserver(callback, config);
-
-function addObserver() {
-    const auxiDom=document.querySelectorAll(".porcentage"); 
-    auxiDom.forEach(data =>{
-        observer.observe(data); 
-    }); 
-}
-
-export {cargarHabilidades, addObserver}
+export { cargarHabilidades }

@@ -30,8 +30,9 @@
     height: 100%;
     background: rgba(15, 23, 42, 0.92);
     backdrop-filter: blur(4px);
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--text-primary);
     font-weight: 500;
     font-size: 0.85em;
