@@ -1,6 +1,35 @@
 {
    "listaProyectos": [
       {
+         "titulo": "sigPEEC-INLASA",
+         "image": "./assets/img/proyectos/peec-inlasa.jpg",
+         "Descripcion": "Plataforma full-stack para la evaluación externa del desempeño de laboratorios de salud (INLASA, Bolivia). Desarrollado end-to-end (~68 controladores, 46 modelos, 219 vistas): arquitectura RBAC multi-rol, certificados PDF con QR de verificación, exportación a Excel, dashboards con Chart.js, motor de formularios dinámicos y módulo estadístico ISO 13528.",
+         "url_web": "https://sigpeec.inlasa.gob.bo/login",
+         "url_github": "",
+         "stack": [
+            {
+               "url": "./assets/img/tecnologias/laravel.svg",
+               "name": "Laravel"
+            },
+            {
+               "url": "./assets/img/tecnologias/php.png",
+               "name": "PHP"
+            },
+            {
+               "url": "./assets/img/tecnologias/mysql.svg",
+               "name": "MySQL"
+            },
+            {
+               "url": "./assets/img/tecnologias/tailwind.svg",
+               "name": "Tailwind CSS"
+            },
+            {
+               "url": "./assets/img/tecnologias/chartjs.png",
+               "name": "Chart.js"
+            }
+         ]
+      },
+      {
          "titulo": "Juego Math - Back End",
          "image": "./assets/img/proyectos/juego-math-back.png",
          "Descripcion": "El backend maneja la lógica del juego, autenticación de usuarios y gestión de datos. Se utiliza autenticación JWT para proteger las rutas y cifrar contraseñas, además de administrar los datos del juego y usuarios de forma segura.",

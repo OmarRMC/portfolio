@@ -1,0 +1,120 @@
+.timeline {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 28px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 6px;
+    width: 2px;
+    background: var(--border-hover);
+}
+
+.timelineItem {
+    position: relative;
+    padding-bottom: 28px;
+}
+
+.timelineItem:last-child {
+    padding-bottom: 0;
+}
+
+.timelineItem__dot {
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bg-primary);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+    transform: translateX(0.5px);
+}
+
+.timelineItem__content {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 22px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.timelineItem__content:hover {
+    border-color: var(--border-hover);
+    transform: translateX(3px);
+}
+
+.timelineItem__fecha {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72em;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+}
+
+.timelineItem__rol {
+    font-size: 0.98em;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.timelineItem__empresa {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.timelineItem__desc {
+    font-size: 0.88em;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.timelineItem__desc b {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.timelineItem__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+}
+
+.timelineItem__tags li {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7em;
+    color: var(--text-muted);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+@media screen and (max-width: 650px) {
+    .timeline {
+        padding-left: 22px;
+    }
+
+    .timelineItem__dot {
+        left: -22px;
+    }
+
+    .timelineItem__content {
+        padding: 16px 18px;
+    }
+}

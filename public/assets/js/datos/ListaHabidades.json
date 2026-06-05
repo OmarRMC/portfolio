@@ -14,6 +14,8 @@
         {"name": "MySQL",        "url": "./assets/img/tecnologias/mysql.svg",         "nivel": "Intermedio"},
         {"name": "Git",          "url": "./assets/img/tecnologias/git.png",           "nivel": "Intermedio"},
         {"name": "Laravel",      "url": "./assets/img/tecnologias/laravel.svg",       "nivel": "Intermedio"},
+        {"name": "Chart.js",     "url": "./assets/img/tecnologias/chartjs.png",       "nivel": "Intermedio"},
+        {"name": "Bootstrap",    "url": "./assets/img/tecnologias/Bootstrap.png",     "nivel": "Intermedio"},
         {"name": "Docker",       "url": "./assets/img/tecnologias/docker.svg",        "nivel": "Básico"},
         {"name": "AWS",          "url": "./assets/img/tecnologias/aws.svg",           "nivel": "Básico"},
         {"name": "PostgreSQL",   "url": "./assets/img/tecnologias/postgresql.svg",    "nivel": "Básico"},
