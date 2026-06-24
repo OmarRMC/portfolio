@@ -1,5 +1,6 @@
 {
     "lista_Certificados":[
+        {"url":"./assets/img/certificados/CertificadoPeecInlasa.png", "descripcion":"Reconocimiento por el desarrollo del sistema SIGPEEC v2.0 - PEEC INLASA", "alt":"Reconocimiento PEEC INLASA"},
         {"url":"./assets/img/certificados/certificado-php.jpg", "descripcion":"Certificado de PHP", "alt":"php"},
         {"url":"./assets/img/certificados/ccbol_participante_optimized.png", "descripcion":"Certificado de CCBOL", "alt":"CCBOL"},
         {"url":"./assets/img/certificados/clei_participante_optimized.png", "descripcion":"Certificado de CLEI", "alt":"CLEI"},
