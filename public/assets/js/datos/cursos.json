@@ -1,0 +1,18 @@
+{
+  "listaCursos": [
+    {
+      "titulo": "React JS + CI/CD",
+      "slug": "react-cicd",
+      "descripcion": "Desarrollo Front-End Profesional con React, Firebase y CI/CD.",
+      "sesiones": 8,
+      "tecnologias": "React · Firebase · Vite · Tailwind · GitHub Actions"
+    },
+    {
+      "titulo": "Laravel 12",
+      "slug": "laravel-12",
+      "descripcion": "Desarrollo de Aplicaciones Web con Laravel 12: MVC, Eloquent, API REST.",
+      "sesiones": 12,
+      "tecnologias": "Laravel · PHP · MySQL · Eloquent · API REST"
+    }
+  ]
+}

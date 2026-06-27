@@ -1,0 +1,72 @@
+.cursos__intro {
+    color: var(--text-secondary);
+    max-width: 60ch;
+    margin-bottom: 28px;
+}
+
+.listaCursos {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.curso-card {
+    display: block;
+    padding: 1.5rem;
+    border-radius: 14px;
+    text-decoration: none;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.curso-card:hover {
+    border-color: var(--accent-border);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.curso-card__tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+}
+
+.curso-card__titulo {
+    margin: 0.5rem 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.curso-card__desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.curso-card__tecs {
+    display: block;
+    margin-top: 0.75rem;
+    color: var(--accent);
+    font-size: 0.8rem;
+}
+
+.curso-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.curso-card__cta i {
+    transition: transform 0.2s ease;
+}
+
+.curso-card:hover .curso-card__cta i {
+    transform: translateX(4px);
+}

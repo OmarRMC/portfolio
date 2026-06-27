@@ -120,7 +120,7 @@
         overflow: hidden;
     }
     .navar > .showItemsNav, .navar.showItemsNav {
-        max-height: 200px;
+        max-height: 280px;
         visibility: visible;
         z-index: 4;
     }
