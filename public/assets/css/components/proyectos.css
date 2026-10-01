@@ -114,6 +114,7 @@
 /* Inner content area: flex-grow to fill remaining space */
 .cardProyecto > div[style]{
     flex: 1;
+    min-height: 0;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -129,6 +130,7 @@
     overflow: hidden;
     line-height: 1.5;
     flex: 1;
+    min-height: 0;
 }
 
 .tituloProyecto{
@@ -161,6 +163,7 @@
     gap: 5px;
     padding: 8px 10px;
     margin-top: auto;
+    flex-shrink: 0;
     position: relative;
     z-index: 2;
     border-top: 1px solid var(--border);
@@ -249,10 +252,15 @@
     height: 35%;
 }
 
+/* La descripcion se expande solo hasta el espacio libre; si no cabe, scroll
+   interno, para no empujar las tecnologias fuera de la card (alto fijo). */
 .cardProyecto:hover .mainCard{
     color: var(--text-primary);
     max-height: none;
-    mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+    mask-image: none;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-hover) transparent;
 }
 
 .imgCard::after{

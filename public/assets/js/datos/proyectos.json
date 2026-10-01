@@ -30,6 +30,39 @@
          ]
       },
       {
+         "titulo": "Agenda de Eventos",
+         "image": "./assets/img/proyectos/agenda-eventos.jpg",
+         "Descripcion": "Plataforma de eventos e inscripciones con tres formas de acceso: web, API REST y un servidor MCP para que asistentes de IA busquen eventos e inscriban usuarios. Roles (admin, organizador, participante), control de cupos y asistencia, certificados y reportes en PDF/Excel, correos en cola con Redis, tareas programadas y despliegue en AWS EC2 con Docker y Terraform.",
+         "url_web": "",
+         "url_github": "https://github.com/OmarRMC/eventos-app",
+         "stack": [
+            {
+               "url": "./assets/img/tecnologias/laravel.svg",
+               "name": "Laravel"
+            },
+            {
+               "url": "./assets/img/tecnologias/php.png",
+               "name": "PHP"
+            },
+            {
+               "url": "./assets/img/tecnologias/postgresql.svg",
+               "name": "PostgreSQL"
+            },
+            {
+               "url": "./assets/img/tecnologias/tailwind.svg",
+               "name": "Tailwind CSS"
+            },
+            {
+               "url": "./assets/img/tecnologias/docker.svg",
+               "name": "Docker"
+            },
+            {
+               "url": "./assets/img/tecnologias/aws.svg",
+               "name": "AWS"
+            }
+         ]
+      },
+      {
          "titulo": "Juego Math - Back End",
          "image": "./assets/img/proyectos/juego-math-back.png",
          "Descripcion": "El backend maneja la lógica del juego, autenticación de usuarios y gestión de datos. Se utiliza autenticación JWT para proteger las rutas y cifrar contraseñas, además de administrar los datos del juego y usuarios de forma segura.",

@@ -18,6 +18,7 @@
         {"name": "Bootstrap",    "url": "./assets/img/tecnologias/Bootstrap.png",     "nivel": "Intermedio"},
         {"name": "Docker",       "url": "./assets/img/tecnologias/docker.svg",        "nivel": "Básico"},
         {"name": "AWS",          "url": "./assets/img/tecnologias/aws.svg",           "nivel": "Básico"},
+        {"name": "Terraform",    "url": "./assets/img/tecnologias/terraform.svg",     "nivel": "Básico"},
         {"name": "PostgreSQL",   "url": "./assets/img/tecnologias/postgresql.svg",    "nivel": "Básico"},
         {"name": "OpenAI",       "url": "./assets/img/tecnologias/openai.svg",        "nivel": "Básico"},
         {"name": "LangChain",    "url": "./assets/img/tecnologias/langchain.svg",     "nivel": "Básico"},
