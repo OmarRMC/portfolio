@@ -23,6 +23,7 @@
         {"name": "OpenAI",       "url": "./assets/img/tecnologias/openai.svg",        "nivel": "Básico"},
         {"name": "LangChain",    "url": "./assets/img/tecnologias/langchain.svg",     "nivel": "Básico"},
         {"name": "Arduino",      "url": "./assets/img/tecnologias/arduino.svg",       "nivel": "Intermedio"},
-        {"name": "Raspberry Pi", "url": "./assets/img/tecnologias/raspberrypi.svg",   "nivel": "Básico"}
+        {"name": "Raspberry Pi", "url": "./assets/img/tecnologias/raspberrypi.svg",   "nivel": "Básico"},
+        {"name": "SIG (GIS)",    "url": "./assets/img/tecnologias/sig.svg",           "nivel": "Básico"}
     ]
 }
