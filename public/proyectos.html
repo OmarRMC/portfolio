@@ -36,16 +36,335 @@
             </span>            
         </div>
         <section id="Proyectos">
-            <span class="VolverAtras">
+            <a class="VolverAtras" href="/" aria-label="Volver al inicio">
                 <i class="fa-solid fa-arrow-left"></i>
-            </span>
-            <h2 class="TituloSeciones"> <i class="fa-regular fa-folder-open"></i> Proyectos </h2>
+            </a>
+            <h1 class="TituloSeciones"> <i class="fa-regular fa-folder-open"></i> Proyectos </h1>
+            <p class="intro">
+                Proyectos de desarrollo web realizados por Omar Rodrigo Mamani Capcha: aplicaciones full stack,
+                sistemas de gestión y juegos web.
+            </p>
             <div class="listaProyectos">
-<!--
-                <div class="contenedorCard">
-                   
-                </div>
--->                
+<!--CONTENIDO:INICIO-->
+      <div class="contenedorCard startShowCard">
+        <div class="cardProyecto">
+        <a href="https://sigpeec.inlasa.gob.bo/login" target="_blank" rel="noopener">
+          <span class="openProyect">
+              <i class="fa-solid fa-up-right-from-square"></i>
+          </span>
+        </a>
+        
+        <figure class="imgCard">
+            <img src="./assets/img/proyectos/peec-inlasa.jpg" alt="sigPEEC-INLASA" loading="lazy">
+            <h2 class="tituloProyecto">sigPEEC-INLASA</h2>
+        </figure>
+        <div style="position: relative;">
+            <div class="capa"></div>
+            <main class="mainCard">
+                <p class="descripcion">Plataforma full-stack para la evaluación externa del desempeño de laboratorios de salud (INLASA, Bolivia). Desarrollado end-to-end (~68 controladores, 46 modelos, 219 vistas): arquitectura RBAC multi-rol, certificados PDF con QR de verificación, exportación a Excel, dashboards con Chart.js, motor de formularios dinámicos y módulo estadístico ISO 13528.</p>
+            </main>
+            <footer class="foorderCard">
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/laravel.svg" alt="Laravel" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/php.png" alt="PHP" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/mysql.svg" alt="MySQL" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/tailwind.svg" alt="Tailwind CSS" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/chartjs.png" alt="Chart.js" loading="lazy"/>
+            </figure>
+            </footer>
+        </div>
+        </div>
+      </div>
+
+      <div class="contenedorCard startShowCard">
+        <div class="cardProyecto">
+        
+        <a href="https://github.com/OmarRMC/eventos-app" target="_blank" rel="noopener">
+          <span class="openGit">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+        </a>
+        <figure class="imgCard">
+            <img src="./assets/img/proyectos/agenda-eventos.jpg" alt="Agenda de Eventos" loading="lazy">
+            <h2 class="tituloProyecto">Agenda de Eventos</h2>
+        </figure>
+        <div style="position: relative;">
+            <div class="capa"></div>
+            <main class="mainCard">
+                <p class="descripcion">Plataforma de eventos e inscripciones con tres formas de acceso: web, API REST y un servidor MCP para que asistentes de IA busquen eventos e inscriban usuarios. Roles (admin, organizador, participante), control de cupos y asistencia, certificados y reportes en PDF/Excel, correos en cola con Redis, tareas programadas y despliegue en AWS EC2 con Docker y Terraform.</p>
+            </main>
+            <footer class="foorderCard">
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/laravel.svg" alt="Laravel" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/php.png" alt="PHP" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/postgresql.svg" alt="PostgreSQL" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/tailwind.svg" alt="Tailwind CSS" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/docker.svg" alt="Docker" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/aws.svg" alt="AWS" loading="lazy"/>
+            </figure>
+            </footer>
+        </div>
+        </div>
+      </div>
+
+      <div class="contenedorCard startShowCard">
+        <div class="cardProyecto">
+        <a href="https://juego-math-back.vercel.app/api-docs" target="_blank" rel="noopener">
+          <span class="openProyect">
+              <i class="fa-solid fa-up-right-from-square"></i>
+          </span>
+        </a>
+        <a href="https://github.com/OmarRMC/juego-math-back" target="_blank" rel="noopener">
+          <span class="openGit">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+        </a>
+        <figure class="imgCard">
+            <img src="./assets/img/proyectos/juego-math-back.png" alt="Juego Math - Back End" loading="lazy">
+            <h2 class="tituloProyecto">Juego Math - Back End</h2>
+        </figure>
+        <div style="position: relative;">
+            <div class="capa"></div>
+            <main class="mainCard">
+                <p class="descripcion">El backend maneja la lógica del juego, autenticación de usuarios y gestión de datos. Se utiliza autenticación JWT para proteger las rutas y cifrar contraseñas, además de administrar los datos del juego y usuarios de forma segura.</p>
+            </main>
+            <footer class="foorderCard">
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/nodo-js.png" alt="html" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/TS.png" alt="css3" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/js.png" alt="js" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/jwt-3.svg" alt="Ts" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/mongodb.png" alt="Bootsatrap" loading="lazy"/>
+            </figure>
+            </footer>
+        </div>
+        </div>
+      </div>
+
+      <div class="contenedorCard startShowCard">
+        <div class="cardProyecto">
+        <a href="https://omarrmc.github.io/juego-math/" target="_blank" rel="noopener">
+          <span class="openProyect">
+              <i class="fa-solid fa-up-right-from-square"></i>
+          </span>
+        </a>
+        <a href="https://github.com/OmarRMC/juego-math" target="_blank" rel="noopener">
+          <span class="openGit">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+        </a>
+        <figure class="imgCard">
+            <img src="./assets/img/proyectos/JuegoMath.jpg" alt="Juego Math - Front End" loading="lazy">
+            <h2 class="tituloProyecto">Juego Math - Front End</h2>
+        </figure>
+        <div style="position: relative;">
+            <div class="capa"></div>
+            <main class="mainCard">
+                <p class="descripcion">Es un juego de matemáticas con cuatro niveles: Básico, Intermedio, Avanzado y Pro. Los jugadores resuelven sumas, restas, multiplicaciones y divisiones que se vuelven más difíciles en cada nivel. En los últimos niveles hay un temporizador para aumentar el reto. Los usuarios pueden crear una cuenta, iniciar sesión y ver sus puntuaciones.</p>
+            </main>
+            <footer class="foorderCard">
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/html-5.png" alt="html" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/css-3.png" alt="css3" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/js.png" alt="js" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/chartjs.png" alt="ChartJS" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/ReactJS.png" alt="ReactTS" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/TS.png" alt="Ts" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/Bootstrap.png" alt="Bootsatrap" loading="lazy"/>
+            </figure>
+            </footer>
+        </div>
+        </div>
+      </div>
+
+      <div class="contenedorCard startShowCard">
+        <div class="cardProyecto">
+        <a href="https://proyecto-ormc.web.app/" target="_blank" rel="noopener">
+          <span class="openProyect">
+              <i class="fa-solid fa-up-right-from-square"></i>
+          </span>
+        </a>
+        <a href="https://github.com/OmarRMC/" target="_blank" rel="noopener">
+          <span class="openGit">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+        </a>
+        <figure class="imgCard">
+            <img src="./assets/img/proyectos/GestionHorarios.png" alt="Gestión Horarios/Tareas" loading="lazy">
+            <h2 class="tituloProyecto">Gestión Horarios/Tareas</h2>
+        </figure>
+        <div style="position: relative;">
+            <div class="capa"></div>
+            <main class="mainCard">
+                <p class="descripcion">Permite a los usuarios autenticarse con Google para gestionar sus horarios, archivos y listas de tareas, y para el almacenamiento se usan los servicios de Firebase.</p>
+            </main>
+            <footer class="foorderCard">
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/html-5.png" alt="html" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/css-3.png" alt="css3" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/js.png" alt="css3" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/ReactJS.png" alt="css3" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/firebase.png" alt="css3" loading="lazy"/>
+            </figure>
+            </footer>
+        </div>
+        </div>
+      </div>
+
+      <div class="contenedorCard startShowCard">
+        <div class="cardProyecto">
+        <a href="https://culicid-paragraph.000webhostapp.com/proyecto_php/contactos" target="_blank" rel="noopener">
+          <span class="openProyect">
+              <i class="fa-solid fa-up-right-from-square"></i>
+          </span>
+        </a>
+        <a href="https://github.com/OmarRMC/sistema_contactos" target="_blank" rel="noopener">
+          <span class="openGit">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+        </a>
+        <figure class="imgCard">
+            <img src="./assets/img/proyectos/SistemaDeContactos.jpg" alt="Sistema de contactos" loading="lazy">
+            <h2 class="tituloProyecto">Sistema de contactos</h2>
+        </figure>
+        <div style="position: relative;">
+            <div class="capa"></div>
+            <main class="mainCard">
+                <p class="descripcion">Sistema de contactos con usuarios y base de datos <br> Adm:omar@gmail.com , pass:omar <br> user:juan@gmail.com , pass:juan</p>
+            </main>
+            <footer class="foorderCard">
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/html-5.png" alt="html" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/css-3.png" alt="css3" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/php.png" alt="php" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/sql.png" alt="sql" loading="lazy"/>
+            </figure>
+            </footer>
+        </div>
+        </div>
+      </div>
+
+      <div class="contenedorCard startShowCard">
+        <div class="cardProyecto">
+        <a href="https://omarrmc.github.io/metodo-burbuja/" target="_blank" rel="noopener">
+          <span class="openProyect">
+              <i class="fa-solid fa-up-right-from-square"></i>
+          </span>
+        </a>
+        <a href="https://github.com/OmarRMC/metodo-burbuja" target="_blank" rel="noopener">
+          <span class="openGit">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+        </a>
+        <figure class="imgCard">
+            <img src="./assets/img/proyectos/Burbuja.jpg" alt="Método Burbuja" loading="lazy">
+            <h2 class="tituloProyecto">Método Burbuja</h2>
+        </figure>
+        <div style="position: relative;">
+            <div class="capa"></div>
+            <main class="mainCard">
+                <p class="descripcion">Ordenar un vector de forma animada aplicando el método de burbuja</p>
+            </main>
+            <footer class="foorderCard">
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/html-5.png" alt="html" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/css-3.png" alt="css3" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/js.png" alt="js" loading="lazy"/>
+            </figure>
+            </footer>
+        </div>
+        </div>
+      </div>
+
+      <div class="contenedorCard startShowCard">
+        <div class="cardProyecto">
+        <a href="https://omarrmc.github.io/Animacion/" target="_blank" rel="noopener">
+          <span class="openProyect">
+              <i class="fa-solid fa-up-right-from-square"></i>
+          </span>
+        </a>
+        <a href="https://github.com/OmarRMC/" target="_blank" rel="noopener">
+          <span class="openGit">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </span>
+        </a>
+        <figure class="imgCard">
+            <img src="./assets/img/proyectos/Animacion3D.jpg" alt="Animación 3D" loading="lazy">
+            <h2 class="tituloProyecto">Animación 3D</h2>
+        </figure>
+        <div style="position: relative;">
+            <div class="capa"></div>
+            <main class="mainCard">
+                <p class="descripcion">Animación en 3D de galería de imágenes</p>
+            </main>
+            <footer class="foorderCard">
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/html-5.png" alt="html" loading="lazy"/>
+            </figure>
+            <figure class="img_tecnologia">
+                <img src="./assets/img/tecnologias/css-3.png" alt="css3" loading="lazy"/>
+            </figure>
+            </footer>
+        </div>
+        </div>
+      </div>
+<!--CONTENIDO:FIN-->
             </div>
         </section>
     </main>

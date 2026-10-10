@@ -26,8 +26,8 @@ function crearCardProyecto(proyecto) {
         ${linkWeb}
         ${linkGit}
         <figure class="imgCard">
-            <img src="${proyecto.image}" alt="${proyecto.titulo}">
-            <span class="tituloProyecto">${proyecto.titulo}</span>
+            <img src="${proyecto.image}" alt="${proyecto.titulo}" loading="lazy">
+            <h2 class="tituloProyecto">${proyecto.titulo}</h2>
         </figure>
      <div style="position: relative;">
         <div class="capa"></div>

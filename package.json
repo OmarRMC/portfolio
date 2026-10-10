@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "generar": "node scripts/generar.mjs"
+  },
   "dependencies": {
     "firebase": "^10.13.0"
   }

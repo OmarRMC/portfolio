@@ -21,14 +21,12 @@ switch (ruta) {
     break;
   case "/proyectos.html":
     proyectos = await import('./components/proyectos.js');
-    proyectos["CargarProyectos"](); 
-    volverHome(); 
-    break 
-  case "/certificados.html": 
+    proyectos["CargarProyectos"]();
+    break
+  case "/certificados.html":
     resCestificados = await import('./components/certificados.js');
      resCestificados["cargarCertificados"]()
-     volverHome(); 
-  break  
+  break
   default:
     console.log("no se encontro la ruta");
     break;
@@ -44,12 +42,5 @@ if(false ){
   });
 
   
-}
-
-function volverHome() {
-  document.querySelector(".VolverAtras").addEventListener("click",()=>{
-    //        history.back();
-              window.location.pathname="/"
-  })
 }
 
