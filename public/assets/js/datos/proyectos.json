@@ -87,7 +87,7 @@
             },
             {
                "url": "./assets/img/tecnologias/mongodb.png",
-               "name": "Bootsatrap"
+               "name": "MongoDB"
             }
          ]
       },
@@ -124,7 +124,7 @@
             },
             {
                "url": "./assets/img/tecnologias/Bootstrap.png",
-               "name": "Bootsatrap"
+               "name": "Bootstrap"
             }
          ]
       },
